@@ -84,7 +84,9 @@ public class GridViewActivity extends ActionBarActivity {
     }
 
     public void updateMovies() {
+//First, clear the adapter. Otherwise, the new movie list gets appended to the old movie list rather than replacing it.
         mGridAdapter.clear();
+        
         AsyncHttpTask movieTask = new AsyncHttpTask();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         mSort = prefs.getString("sort", "sort_by=popularity.desc");

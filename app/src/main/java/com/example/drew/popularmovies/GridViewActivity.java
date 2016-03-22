@@ -107,6 +107,7 @@ public class GridViewActivity extends ActionBarActivity {
         }
     }
 
+//AsyncTask is used to spawn a background thread for the API call, keeping the main thread from being blocked.
     public class AsyncHttpTask extends AsyncTask<String, Void, Integer> {
 
         @Override

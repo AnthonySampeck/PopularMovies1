@@ -1,5 +1,11 @@
 package com.example.drew.popularmovies;
 
+/**
+I use this class to store the information for each movie as a movie object. As part of the first Android project
+I developed, I though this a good solution. As I progressed, I learned a better way to store and retrieve information,
+using content loaders in later projects. 
+*/
+
 public class Movie {
     private String image;
     private String title;
